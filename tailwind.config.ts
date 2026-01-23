@@ -83,6 +83,8 @@ export default {
         },
       },
       fontFamily: {
+        display: ["'Oswald'", "sans-serif"],
+        body: ["'Open Sans'", "sans-serif"],
         sans: ["var(--font-sans)"],
         serif: ["var(--font-serif)"],
         mono: ["var(--font-mono)"],

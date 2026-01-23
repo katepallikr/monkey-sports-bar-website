@@ -1,38 +1,75 @@
-import { type User, type InsertUser } from "@shared/schema";
-import { randomUUID } from "crypto";
-
-// modify the interface with any CRUD methods
-// you might need
+import {
+  categories,
+  menuItems,
+  locations,
+  specials,
+  subscribers,
+  type Category,
+  type MenuItem,
+  type Location,
+  type Special,
+  type Subscriber,
+  type InsertSubscriber
+} from "@shared/schema";
+import { db } from "./db";
+import { eq, asc } from "drizzle-orm";
 
 export interface IStorage {
-  getUser(id: string): Promise<User | undefined>;
-  getUserByUsername(username: string): Promise<User | undefined>;
-  createUser(user: InsertUser): Promise<User>;
+  // Menu
+  getCategories(): Promise<(Category & { items: MenuItem[] })[]>;
+  getFeaturedItems(): Promise<MenuItem[]>;
+  
+  // Locations
+  getLocations(): Promise<Location[]>;
+  getLocation(id: number): Promise<Location | undefined>;
+  
+  // Specials
+  getSpecials(): Promise<Special[]>;
+  
+  // Subscribers
+  createSubscriber(subscriber: InsertSubscriber): Promise<Subscriber>;
+  getSubscriberByEmail(email: string): Promise<Subscriber | undefined>;
 }
 
-export class MemStorage implements IStorage {
-  private users: Map<string, User>;
-
-  constructor() {
-    this.users = new Map();
+export class DatabaseStorage implements IStorage {
+  async getCategories(): Promise<(Category & { items: MenuItem[] })[]> {
+    const cats = await db.query.categories.findMany({
+      orderBy: [asc(categories.sortOrder)],
+      with: {
+        items: true,
+      },
+    });
+    return cats;
   }
 
-  async getUser(id: string): Promise<User | undefined> {
-    return this.users.get(id);
+  async getFeaturedItems(): Promise<MenuItem[]> {
+    return await db.query.menuItems.findMany({
+      where: eq(menuItems.isFeatured, true),
+    });
   }
 
-  async getUserByUsername(username: string): Promise<User | undefined> {
-    return Array.from(this.users.values()).find(
-      (user) => user.username === username,
-    );
+  async getLocations(): Promise<Location[]> {
+    return await db.select().from(locations);
   }
 
-  async createUser(insertUser: InsertUser): Promise<User> {
-    const id = randomUUID();
-    const user: User = { ...insertUser, id };
-    this.users.set(id, user);
-    return user;
+  async getLocation(id: number): Promise<Location | undefined> {
+    const [loc] = await db.select().from(locations).where(eq(locations.id, id));
+    return loc;
+  }
+
+  async getSpecials(): Promise<Special[]> {
+    return await db.select().from(specials).where(eq(specials.isActive, true));
+  }
+
+  async createSubscriber(insertSubscriber: InsertSubscriber): Promise<Subscriber> {
+    const [sub] = await db.insert(subscribers).values(insertSubscriber).returning();
+    return sub;
+  }
+
+  async getSubscriberByEmail(email: string): Promise<Subscriber | undefined> {
+    const [sub] = await db.select().from(subscribers).where(eq(subscribers.email, email));
+    return sub;
   }
 }
 
-export const storage = new MemStorage();
+export const storage = new DatabaseStorage();
