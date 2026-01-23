@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
+import logoImg from "@assets/5_monkey_logo_1769204676771.png";
+
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [location] = useLocation();
@@ -28,20 +30,19 @@ export default function Navbar() {
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-black/95 backdrop-blur-sm shadow-md py-2 border-b border-primary/20"
-          : "bg-transparent py-4 bg-gradient-to-b from-black/80 to-transparent"
+          ? "bg-black/95 backdrop-blur-sm shadow-md py-1 border-b border-primary/20"
+          : "bg-transparent py-2 bg-gradient-to-b from-black/80 to-transparent"
       }`}
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/">
           <div className="flex items-center gap-2 cursor-pointer group">
-            <div className="bg-primary p-2 rounded-lg transform group-hover:rotate-12 transition-transform duration-300">
-              <UtensilsCrossed className="h-6 w-6 text-white" />
-            </div>
-            <span className="font-display text-2xl font-bold text-white tracking-widest uppercase">
-              5<span className="text-primary">Monkeys</span>
-            </span>
+            <img 
+              src={logoImg} 
+              alt="5 Monkeys Logo" 
+              className="h-16 w-auto transform group-hover:scale-105 transition-transform duration-300" 
+            />
           </div>
         </Link>
 

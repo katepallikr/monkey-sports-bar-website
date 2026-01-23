@@ -8,6 +8,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { insertSubscriberSchema } from "@shared/schema";
 import type { z } from "zod";
 
+import logoImg from "@assets/5_monkey_logo_1769204676771.png";
+
 type SubscribeForm = z.infer<typeof insertSubscriberSchema>;
 
 export default function Footer() {
@@ -29,11 +31,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand */}
           <div className="space-y-6">
-            <h3 className="text-3xl font-display font-bold text-white uppercase tracking-widest">
-              5<span className="text-primary">Monkeys</span>
-            </h3>
+            <Link href="/">
+              <img 
+                src={logoImg} 
+                alt="5 Monkeys Logo" 
+                className="h-20 w-auto cursor-pointer" 
+              />
+            </Link>
             <p className="text-neutral-400 font-body leading-relaxed">
-              The ultimate destination for sports fans, foodies, and fun seekers. Legendary wings, cold beer, and every game, every time.
+              Sip. Sizzle. Shisha. Sports. Social. The ultimate destination for sports fans, foodies, and fun seekers.
             </p>
             <div className="flex gap-4">
               {[Facebook, Instagram, Twitter].map((Icon, i) => (
