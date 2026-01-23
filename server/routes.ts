@@ -5,11 +5,14 @@ import { api } from "@shared/routes";
 import { z } from "zod";
 import { db } from "./db";
 import { categories, menuItems, locations, specials } from "@shared/schema";
+import { registerObjectStorageRoutes } from "./replit_integrations/object_storage";
 
 export async function registerRoutes(
   httpServer: Server,
   app: Express
 ): Promise<Server> {
+  // Register object storage routes
+  registerObjectStorageRoutes(app);
 
   // === Menu ===
   app.get(api.menu.list.path, async (req, res) => {
