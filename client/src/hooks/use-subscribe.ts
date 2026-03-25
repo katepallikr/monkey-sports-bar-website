@@ -1,30 +1,35 @@
 import { useMutation } from "@tanstack/react-query";
-import { api } from "@shared/routes";
-import { type InsertSubscriber } from "@shared/schema";
 import { useToast } from "@/hooks/use-toast";
 
 export function useSubscribe() {
   const { toast } = useToast();
 
   return useMutation({
-    mutationFn: async (data: InsertSubscriber) => {
-      const res = await fetch(api.subscribe.create.path, {
-        method: api.subscribe.create.method,
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-        credentials: "include",
+    // Static hosting: there is no backend. We open an email draft so staff can add
+    // the address to your mailing list (or replace with Mailchimp/Google Form later).
+    mutationFn: async (data: { email: string }) => {
+      const response = await fetch("https://formsubmit.co/ajax/operations@5monkeysusa.com", {
+        method: "POST",
+        headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          _subject: "New 5M Club Subscriber",
+          Email: data.email,
+        })
       });
 
-      if (!res.ok) {
-        const error = await res.json();
-        throw new Error(error.message || "Failed to subscribe");
+      if (!response.ok) {
+        throw new Error("Failed to subscribe. Please try again later.");
       }
-      return api.subscribe.create.responses[201].parse(await res.json());
+      
+      return { message: "Signup request created" };
     },
     onSuccess: () => {
       toast({
         title: "Welcome to the 5M Club!",
-        description: "You've successfully subscribed to our newsletter.",
+        description: "You're officially on the list! Keep an eye on your inbox.",
         variant: "default",
       });
     },

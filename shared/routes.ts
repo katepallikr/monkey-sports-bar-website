@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { insertSubscriberSchema, categories, menuItems, locations, specials } from './schema';
+import { categorySchema, menuItemSchema, locationSchema, specialSchema } from './schema';
 
 export const errorSchemas = {
   validation: z.object({
@@ -18,57 +18,40 @@ export const api = {
   menu: {
     list: {
       method: 'GET' as const,
-      path: '/api/menu',
+      // Static JSON (S3-friendly)
+      path: '/data/menu.json',
       responses: {
-        200: z.array(z.custom<typeof categories.$inferSelect & { items: typeof menuItems.$inferSelect[] }>()),
+        200: z.array(categorySchema),
       },
     },
     featured: {
       method: 'GET' as const,
-      path: '/api/menu/featured',
+      path: '/data/featured.json',
       responses: {
-        200: z.array(z.custom<typeof menuItems.$inferSelect>()),
+        200: z.array(menuItemSchema),
       },
     }
   },
   locations: {
     list: {
       method: 'GET' as const,
-      path: '/api/locations',
+      path: '/data/locations.json',
       responses: {
-        200: z.array(z.custom<typeof locations.$inferSelect>()),
+        200: z.array(locationSchema),
       },
     },
-    get: {
-      method: 'GET' as const,
-      path: '/api/locations/:id',
-      responses: {
-        200: z.custom<typeof locations.$inferSelect>(),
-        404: errorSchemas.notFound,
-      },
-    }
+    // For static hosting, fetch all locations and filter client-side.
   },
   specials: {
     list: {
       method: 'GET' as const,
-      path: '/api/specials',
+      path: '/data/specials.json',
       responses: {
-        200: z.array(z.custom<typeof specials.$inferSelect>()),
+        200: z.array(specialSchema),
       },
     },
   },
-  subscribe: {
-    create: {
-      method: 'POST' as const,
-      path: '/api/subscribe',
-      input: insertSubscriberSchema,
-      responses: {
-        201: z.object({ message: z.string() }),
-        400: errorSchemas.validation,
-        409: z.object({ message: z.string() }), // Conflict/Duplicate
-      },
-    },
-  },
+  // subscribe endpoint removed for static hosting
 };
 
 export function buildUrl(path: string, params?: Record<string, string | number>): string {

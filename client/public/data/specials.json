@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "$1.50 Wings",
+    "description": "Juicy wings tossed in your choice of sauce. Limited time game-day special.",
+    "dayOfWeek": null,
+    "price": 150,
+    "imageUrl": "https://images.unsplash.com/photo-1608039829572-78524f79c4c7?auto=format&fit=crop&q=80",
+    "isActive": true
+  },
+  {
+    "id": 2,
+    "title": "Double Pour Specials",
+    "description": "Wells $8 • Crown Royal $10 • Jameson $10 • Espolòn $10 • LALO Tequila $12",
+    "dayOfWeek": null,
+    "price": null,
+    "imageUrl": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80",
+    "isActive": true
+  }
+]

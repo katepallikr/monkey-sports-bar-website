@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1,
+    "name": "5 Monkeys – UTSA",
+    "address": "7280 UTSA Boulevard Ste 101",
+    "city": "San Antonio",
+    "state": "TX",
+    "zip": "78249",
+    "phone": "(210) 793-7596",
+    "email": "operations@5monkeysusa.com",
+    "hours": {
+      "mon": "11am–12am",
+      "tue": "11am–12am",
+      "wed": "11am–12am",
+      "thu": "11am–12am",
+      "fri": "11am–12am",
+      "sat": "11am–12am",
+      "sun": "11am–12am"
+    },
+    "latitude": null,
+    "longitude": null,
+    "imageUrl": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&q=80",
+    "features": ["Big Screens", "Hookah", "Cocktails"]
+  }
+]

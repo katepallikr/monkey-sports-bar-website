@@ -8,25 +8,26 @@
   --font-display: 'Oswald', sans-serif;
   --font-body: 'Open Sans', sans-serif;
 
-  /* 5 Monkeys Palette */
-  --background: 0 0% 0%;
-  --foreground: 0 0% 100%;
+  /* Jungle Luxe Palette */
+  --background: 150 30% 2%;     /* Very dark green/black */
+  --foreground: 0 0% 95%;
 
-  --card: 0 0% 5%;
+  --card: 150 20% 4%;
   --card-foreground: 0 0% 100%;
 
-  --popover: 0 0% 5%;
+  --popover: 150 20% 4%;
   --popover-foreground: 0 0% 100%;
 
-  /* Logo Orange - #F15A24 roughly maps to 17 88% 54% */
+  /* Neon Orange - Energetic accent */
   --primary: 17 88% 54%;
   --primary-foreground: 0 0% 100%;
 
-  --secondary: 0 0% 15%;
+  /* Deep Jungle Green */
+  --secondary: 150 30% 10%;
   --secondary-foreground: 0 0% 100%;
 
-  --muted: 0 0% 15%;
-  --muted-foreground: 0 0% 65%;
+  --muted: 150 10% 10%;
+  --muted-foreground: 150 5% 65%;
 
   --accent: 17 88% 54%;
   --accent-foreground: 0 0% 100%;
@@ -34,31 +35,31 @@
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 0 0% 98%;
 
-  --border: 0 0% 20%;
-  --input: 0 0% 20%;
+  --border: 150 20% 15%;
+  --input: 150 20% 15%;
   --ring: 17 88% 54%;
 
   --radius: 0.5rem;
 }
 
 .dark {
-  --background: 0 0% 0%;
-  --foreground: 0 0% 100%;
+  --background: 150 30% 2%;
+  --foreground: 0 0% 95%;
 
-  --card: 0 0% 5%;
+  --card: 150 20% 4%;
   --card-foreground: 0 0% 100%;
 
-  --popover: 0 0% 5%;
+  --popover: 150 20% 4%;
   --popover-foreground: 0 0% 100%;
 
   --primary: 17 88% 54%;
   --primary-foreground: 0 0% 100%;
 
-  --secondary: 0 0% 15%;
+  --secondary: 150 30% 10%;
   --secondary-foreground: 0 0% 100%;
 
-  --muted: 0 0% 15%;
-  --muted-foreground: 0 0% 65%;
+  --muted: 150 10% 10%;
+  --muted-foreground: 150 5% 65%;
 
   --accent: 17 88% 54%;
   --accent-foreground: 0 0% 100%;
@@ -66,8 +67,8 @@
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 0 0% 98%;
 
-  --border: 0 0% 20%;
-  --input: 0 0% 20%;
+  --border: 150 20% 15%;
+  --input: 150 20% 15%;
   --ring: 17 88% 54%;
 }
 
@@ -85,8 +86,22 @@
   }
 }
 
-/* Wood texture utility */
-.bg-wood-pattern {
-  background-color: hsl(var(--card));
-  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20v20H0V0zm10 17a7 7 0 1 0 0-14 7 7 0 0 0 0 14zm20 0a7 7 0 1 0 0-14 7 7 0 0 0 0 14zM10 37a7 7 0 1 0 0-14 7 7 0 0 0 0 14zm10-17h20v20H20V20zm10 17a7 7 0 1 0 0-14 7 7 0 0 0 0 14z' fill='%239C92AC' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+/* Modern clean background utilities */
+.bg-jungle-gradient {
+  background: radial-gradient(circle at top right, #1a2e22 0%, transparent 40%),
+              radial-gradient(circle at bottom left, #2a1a10 0%, transparent 40%),
+              hsl(var(--background));
+}
+
+.bg-noise {
+  position: relative;
+}
+.bg-noise::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
 }

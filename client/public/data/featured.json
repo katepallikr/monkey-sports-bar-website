@@ -1,0 +1,50 @@
+[
+  {
+    "id": 101,
+    "categoryId": 1,
+    "name": "Chicken Wings",
+    "description": "Wings tossed with your choice of sauce.",
+    "price": 1299,
+    "imageUrl": "https://images.unsplash.com/photo-1524114664604-cd8133cd67bf?q=80&w=2000&auto=format&fit=crop",
+    "calories": null,
+    "isFeatured": true,
+    "isNew": false,
+    "allergens": null
+  },
+  {
+    "id": 103,
+    "categoryId": 1,
+    "name": "Loaded Fries",
+    "description": "Seasoned golden fries piled with your choice of protein and melted mozzarella.",
+    "price": 1198,
+    "imageUrl": "https://images.unsplash.com/photo-1576107232684-1279f390859f?q=80&w=2000&auto=format&fit=crop",
+    "calories": null,
+    "isFeatured": true,
+    "isNew": false,
+    "allergens": null
+  },
+  {
+    "id": 202,
+    "categoryId": 2,
+    "name": "Lamb Gyro Plate",
+    "description": "Tender lamb gyro over basmati rice with golden fries, crisp salad, and your choice of sauce.",
+    "price": 1699,
+    "imageUrl": "https://images.unsplash.com/photo-1628840042765-356cda07504e?q=80&w=2000&auto=format&fit=crop",
+    "calories": null,
+    "isFeatured": true,
+    "isNew": false,
+    "allergens": null
+  },
+  {
+    "id": 301,
+    "categoryId": 3,
+    "name": "Long Island Iced Tea",
+    "description": "A classic strong pour—ask for your preferred style.",
+    "price": 1099,
+    "imageUrl": "https://images.unsplash.com/photo-1536935338788-846bb9981813?q=80&w=2000&auto=format&fit=crop",
+    "calories": null,
+    "isFeatured": true,
+    "isNew": false,
+    "allergens": null
+  }
+]

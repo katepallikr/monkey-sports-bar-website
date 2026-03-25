@@ -1,0 +1,886 @@
+[
+  {
+    "id": 1,
+    "name": "Appetizers",
+    "slug": "appetizers",
+    "description": "Start your meal with our delicious appetizers.",
+    "sortOrder": 1,
+    "image": null,
+    "items": [
+      {
+        "id": 101,
+        "categoryId": 1,
+        "name": "Chicken Wings",
+        "description": "Wings tossed with your choice of sauce.",
+        "price": 1299,
+        "imageUrl": "https://images.unsplash.com/photo-1524114664604-cd8133cd67bf?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": true,
+        "isNew": false,
+        "allergens": null
+      },
+      {
+        "id": 102,
+        "categoryId": 1,
+        "name": "Crispy Fish",
+        "description": "Crispy outside, tender and flaky in the inside whiting fish. Comes with Tartar sauce.",
+        "price": 1299,
+        "imageUrl": "https://images.unsplash.com/photo-1541529086526-db283c563270?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": [
+          "Fish"
+        ]
+      },
+      {
+        "id": 103,
+        "categoryId": 1,
+        "name": "Fried Shrimp",
+        "description": "Golden fried shrimp crunchy outside, juicy inside comes with Tartar sauce.",
+        "price": 1399,
+        "imageUrl": "https://images.unsplash.com/photo-1625937751405-6edaf6222b49?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": [
+          "Shellfish"
+        ]
+      },
+      {
+        "id": 104,
+        "categoryId": 1,
+        "name": "Chicken Tenders",
+        "description": "Hand breaded golden, crispy chicken tenders, served with dipping sauce.",
+        "price": 999,
+        "imageUrl": "https://images.unsplash.com/photo-1562967914-608f82629710?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": null
+      },
+      {
+        "id": 105,
+        "categoryId": 1,
+        "name": "Loaded Fries",
+        "description": "Seasoned golden fries piled with choice of either crispy chicken or juicy steak, melted mozzarella, white sauce, cheesy sauce, and chipotle sauce.",
+        "price": 999,
+        "imageUrl": "https://images.unsplash.com/photo-1576107232684-1279f390859f?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": true,
+        "isNew": false,
+        "allergens": [
+          "Dairy"
+        ]
+      },
+      {
+        "id": 107,
+        "categoryId": 1,
+        "name": "Game Day wings-15 count",
+        "description": "15 Crispy, Juicy and Saucy wings with your choice of sauce.",
+        "price": 2299,
+        "imageUrl": "https://images.unsplash.com/photo-1524114664604-cd8133cd67bf?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": true,
+        "isNew": false,
+        "allergens": null
+      },
+      {
+        "id": 108,
+        "categoryId": 1,
+        "name": "777",
+        "description": "Lightly fried your choice of protein in our in-house 777 signature sauce a rich, creamy chef’s special infused with homemade Indian spices.",
+        "price": 1299,
+        "imageUrl": "https://images.unsplash.com/photo-1541529086526-db283c563270?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": null
+      },
+      {
+        "id": 109,
+        "categoryId": 1,
+        "name": "Manchurian",
+        "description": "Crispy, lightly fried Manchurian tossed in our house Indo-Chinese sauce with garlic, ginger, soy, and chili. Choice of your protein.",
+        "price": 1299,
+        "imageUrl": "https://images.unsplash.com/photo-1541529086526-db283c563270?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": [
+          "Soy"
+        ]
+      },
+      {
+        "id": 110,
+        "categoryId": 1,
+        "name": "Jungle Fire",
+        "description": "Crispy, lightly fried choice of your protein coated in our Jungle Fire sauce fiery house blend crafted from real red chilies and chef-made Indian spices.",
+        "price": 1299,
+        "imageUrl": "https://images.unsplash.com/photo-1541529086526-db283c563270?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": null
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Quick Bites",
+    "slug": "quick-bites",
+    "description": "Tasty bites for a quick snack.",
+    "sortOrder": 2,
+    "image": null,
+    "items": [
+      {
+        "id": 201,
+        "categoryId": 2,
+        "name": "Mozzarella Sticks",
+        "description": "Golden fried crispy mozzarella sticks.",
+        "price": 999,
+        "imageUrl": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": [
+          "Dairy"
+        ]
+      },
+      {
+        "id": 202,
+        "categoryId": 2,
+        "name": "Jalapeno Poppers",
+        "description": "Golden fried Jalapenos stuffed with creamy cheese.",
+        "price": 799,
+        "imageUrl": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": [
+          "Dairy"
+        ]
+      },
+      {
+        "id": 203,
+        "categoryId": 2,
+        "name": "Falafel",
+        "description": "Golden fried falafel made from spiced chickpeas.",
+        "price": 999,
+        "imageUrl": "https://images.unsplash.com/photo-1628840042765-356cda07504e?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": null
+      },
+      {
+        "id": 204,
+        "categoryId": 2,
+        "name": "Onion Rings",
+        "description": "Golden fried hand battered onion rings.",
+        "price": 999,
+        "imageUrl": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": [
+          "Onion"
+        ]
+      },
+      {
+        "id": 205,
+        "categoryId": 2,
+        "name": "Chicken Nuggets",
+        "description": "Quick chicken crispy, golden fried bites.",
+        "price": 999,
+        "imageUrl": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": null
+      },
+      {
+        "id": 206,
+        "categoryId": 2,
+        "name": "Waffle Fries",
+        "description": "Crispy, golden waffle fries seasoned to perfection.",
+        "price": 699,
+        "imageUrl": "https://images.unsplash.com/photo-1576107232684-1279f390859f?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": true,
+        "allergens": null
+      },
+      {
+        "id": 207,
+        "categoryId": 2,
+        "name": "Fried Pickles",
+        "description": "Crispy, golden-fried dill pickle slices served with a side of house-made ranch dipping sauce.",
+        "price": 799,
+        "imageUrl": "https://images.unsplash.com/photo-1541529086526-db283c563270?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": true,
+        "allergens": null
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Burgers",
+    "slug": "burgers",
+    "description": "Juicy, smashed, and stacked.",
+    "sortOrder": 3,
+    "image": null,
+    "items": [
+      {
+        "id": 301,
+        "categoryId": 3,
+        "name": "Sizzling Smash",
+        "description": "Fresh smashed angus beef patty with lettuce, tomato and american cheese.",
+        "price": 1399,
+        "imageUrl": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": true,
+        "isNew": false,
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ]
+      },
+      {
+        "id": 302,
+        "categoryId": 3,
+        "name": "Double Down",
+        "description": "Double the meat, Double the smash, Double the fun.",
+        "price": 1599,
+        "imageUrl": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ]
+      },
+      {
+        "id": 303,
+        "categoryId": 3,
+        "name": "3 Pointer",
+        "description": "Crispy breaded chicken with lettuce and pickles.",
+        "price": 1299,
+        "imageUrl": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": [
+          "Gluten"
+        ]
+      },
+      {
+        "id": 304,
+        "categoryId": 3,
+        "name": "Victory Burger",
+        "description": "Veggie patty layered with melted cheese, fresh pickles.",
+        "price": 1299,
+        "imageUrl": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Wraps",
+    "slug": "wraps",
+    "description": "Fresh ingredients wrapped tight.",
+    "sortOrder": 4,
+    "image": null,
+    "items": [
+      {
+        "id": 401,
+        "categoryId": 4,
+        "name": "Steak Wrap",
+        "description": "Juicy steak, savory spices, lettuce, tomato, onion, jalapenos, melted cheese.",
+        "price": 1599,
+        "imageUrl": "https://images.unsplash.com/photo-1600891964092-4316c288032e?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ]
+      },
+      {
+        "id": 402,
+        "categoryId": 4,
+        "name": "Lamb Wrap",
+        "description": "Tender lamb, savory spices, lettuce, tomato, onion, jalapenos, melted cheese.",
+        "price": 1499,
+        "imageUrl": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ]
+      },
+      {
+        "id": 403,
+        "categoryId": 4,
+        "name": "Chicken Wrap",
+        "description": "Grilled chicken, savory spices, lettuce, tomato, onion, jalapenos, melted cheese.",
+        "price": 1399,
+        "imageUrl": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ]
+      },
+      {
+        "id": 404,
+        "categoryId": 4,
+        "name": "Falafel Wrap",
+        "description": "Golden fried Falafel, lettuce, tomato, onion, jalapenos, melted cheese.",
+        "price": 1299,
+        "imageUrl": "https://images.unsplash.com/photo-1628840042765-356cda07504e?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Pita Crave",
+    "slug": "pita-crave",
+    "description": "Delicious fillings in warm pita bread.",
+    "sortOrder": 5,
+    "image": null,
+    "items": [
+      {
+        "id": 501,
+        "categoryId": 5,
+        "name": "Grill Chicken Pitawich",
+        "description": "Juicy Grill Chicken with Saute peppers and onions, melted mozzarella in warm pita bread.",
+        "price": 1399,
+        "imageUrl": "https://images.unsplash.com/photo-1628840042765-356cda07504e?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ]
+      },
+      {
+        "id": 502,
+        "categoryId": 5,
+        "name": "Crispy Chicken Pitawich",
+        "description": "Crispy chicken with saute peppers and onions, melted mozzarella in warm pita bread.",
+        "price": 1399,
+        "imageUrl": "https://images.unsplash.com/photo-1628840042765-356cda07504e?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ]
+      },
+      {
+        "id": 503,
+        "name": "Steak Pitawich",
+        "description": "Juicy Steak sautéed with peppers, jalapeños, and onions, layered with melted mozzarella, cheddar, and monterey jack served inside two warm pita breads, cut into four pieces, and accompanied by white and red sauces.",
+        "price": 1599,
+        "imageUrl": "https://images.unsplash.com/photo-1628840042765-356cda07504e?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": null
+      },
+      {
+        "id": 504,
+        "name": "Falafel Pitawich",
+        "description": "Crispy falafel layered with creamy hummus, sautéed peppers, jalapeños, onions, fresh tomato, crisp lettuce, golden fries, and melted mozzarella, cheddar, and monterey jack served inside two warm pita breads, cut into four pieces, and accompanied by white and red sauces.",
+        "price": 1299,
+        "imageUrl": "https://images.unsplash.com/photo-1628840042765-356cda07504e?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": null
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Philly Station",
+    "slug": "philly-station",
+    "description": "Classic and twisted Philly cheesesteaks.",
+    "sortOrder": 6,
+    "image": null,
+    "items": [
+      {
+        "id": 601,
+        "categoryId": 6,
+        "name": "Grill Chicken Philly Melt",
+        "description": "Juicy Grill chicken with sautéed peppers and onions, melted american cheese on a toasted roll.",
+        "price": 1399,
+        "imageUrl": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ]
+      },
+      {
+        "id": 602,
+        "categoryId": 6,
+        "name": "Crispy Chicken Philly Crunch",
+        "description": "Hand-breaded crispy chicken with melted american cheese on a toasted roll.",
+        "price": 1399,
+        "imageUrl": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ]
+      },
+      {
+        "id": 603,
+        "categoryId": 6,
+        "name": "Cheese Steak Philly Melt",
+        "description": "Fresh Angus beef with sautéed peppers and onions, melted american cheese on a toasted roll.",
+        "price": 1599,
+        "imageUrl": "https://images.unsplash.com/photo-1600891964092-4316c288032e?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": true,
+        "isNew": false,
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ]
+      },
+      {
+        "id": 604,
+        "categoryId": 6,
+        "name": "Chop Cheese Philly Melt",
+        "description": "Fresh Angus beef with sautéed peppers and onions, Chopped american cheese, crisp lettuce, tomato on a toasted roll.",
+        "price": 1599,
+        "imageUrl": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ]
+      },
+      {
+        "id": 605,
+        "categoryId": 6,
+        "name": "Heavy Duty Philly Supreme",
+        "description": "Fresh Angus beef with sautéed peppers and onions, chicken tender, mozzarella sticks, onion rings, chopped american cheese, crisp lettuce, tomato on a toasted roll.",
+        "price": 1799,
+        "imageUrl": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": true,
+        "isNew": false,
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Grill and Chill Platters",
+    "slug": "grill-and-chill-platters",
+    "description": "Generous platters served with rice, fries, and salad.",
+    "sortOrder": 7,
+    "image": null,
+    "items": [
+      {
+        "id": 701,
+        "categoryId": 7,
+        "name": "Grill Chicken Power Platter",
+        "description": "Juicy marinated chicken grilled to perfection served over flavored aromatic basmati rice with golden fries and crisp garden salad.",
+        "price": 1499,
+        "imageUrl": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": null
+      },
+      {
+        "id": 702,
+        "categoryId": 7,
+        "name": "Crispy Chicken Platter",
+        "description": "Crispy golden fried chicken served over flavored aromatic basmati rice with golden fried, fresh garden salad.",
+        "price": 1499,
+        "imageUrl": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": null
+      },
+      {
+        "id": 703,
+        "categoryId": 7,
+        "name": "Beast Combo Platter",
+        "description": "Juicy grill chicken, delicious lamb gyro, falafel served over flavored aromatic basmati rice with golden fries, crisp garden salad.",
+        "price": 1699,
+        "imageUrl": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": true,
+        "isNew": false,
+        "allergens": null
+      },
+      {
+        "id": 704,
+        "categoryId": 7,
+        "name": "Falafel Fiesta Platter",
+        "description": "Falafel served over flavored aromatic basmati rice with golden fries, fresh garden salad.",
+        "price": 1499,
+        "imageUrl": "https://images.unsplash.com/photo-1628840042765-356cda07504e?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": null
+      },
+      {
+        "id": 705,
+        "categoryId": 7,
+        "name": "Steak Supreme Platter",
+        "description": "Perfectly grilled steak served over flavored aromatic basmati rice with golden fries, fresh garden salad.",
+        "price": 1899,
+        "imageUrl": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": null
+      },
+      {
+        "id": 706,
+        "categoryId": 7,
+        "name": "Lamb Platter",
+        "description": "Tender lamb served over flavored aromatic basmati rice.",
+        "price": 1799,
+        "imageUrl": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": null
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Salads",
+    "slug": "salads",
+    "description": "Fresh, crisp, and healthy options.",
+    "sortOrder": 8,
+    "image": null,
+    "items": [
+      {
+        "id": 801,
+        "categoryId": 8,
+        "name": "Chicken Power Bowl",
+        "description": "Crispy golden chicken atop fresh greens, crisp vegetables, drizzled with choice of dressing.",
+        "price": 1299,
+        "imageUrl": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": null
+      },
+      {
+        "id": 802,
+        "categoryId": 8,
+        "name": "Lamb Garden Bowl",
+        "description": "Seasoned lamb gyro atop fresh greens, crisp vegetables drizzled with choice of dressing.",
+        "price": 1499,
+        "imageUrl": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": null
+      },
+      {
+        "id": 803,
+        "categoryId": 8,
+        "name": "Falafel Crunch Bowl",
+        "description": "Golden crispy falafel atop fresh greens, crisp vegetables, drizzled with choice of dressing.",
+        "price": 1299,
+        "imageUrl": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": null
+      },
+      {
+        "id": 804,
+        "categoryId": 8,
+        "name": "Steak House Salad",
+        "description": "Juicy grilled steak atop fresh greens, crisp vegetables drizzled with choice of dressing.",
+        "price": 1599,
+        "imageUrl": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": null
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Gyros",
+    "slug": "gyros",
+    "description": "Authentic gyros wrapped in pita.",
+    "sortOrder": 10,
+    "image": null,
+    "items": [
+      {
+        "id": 1001,
+        "categoryId": 10,
+        "name": "Falafel Gyro",
+        "description": "Golden fried falafel in a warm pita.",
+        "price": 1399,
+        "imageUrl": "https://images.unsplash.com/photo-1628840042765-356cda07504e?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": [
+          "Gluten"
+        ]
+      },
+      {
+        "id": 1002,
+        "categoryId": 10,
+        "name": "Chicken Gyro",
+        "description": "Seasoned chicken in a warm pita.",
+        "price": 1499,
+        "imageUrl": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": [
+          "Gluten"
+        ]
+      },
+      {
+        "id": 1003,
+        "categoryId": 10,
+        "name": "Lamb Gyro",
+        "description": "Seasoned lamb in a warm pita.",
+        "price": 1599,
+        "imageUrl": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": true,
+        "isNew": false,
+        "allergens": [
+          "Gluten"
+        ]
+      },
+      {
+        "id": 1004,
+        "categoryId": 10,
+        "name": "Combo Gyro",
+        "description": "Mix of proteins in a warm pita.",
+        "price": 1899,
+        "imageUrl": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": [
+          "Gluten"
+        ]
+      },
+      {
+        "id": 1005,
+        "categoryId": 10,
+        "name": "Steak Gyro",
+        "description": "Grilled steak in a warm pita.",
+        "price": 1699,
+        "imageUrl": "https://images.unsplash.com/photo-1600891964092-4316c288032e?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": [
+          "Gluten"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "5 Monkey's Classics",
+    "slug": "5-monkeys-classics",
+    "description": "Our signature steak house classics.",
+    "sortOrder": 11,
+    "image": null,
+    "items": [
+      {
+        "id": 1101,
+        "categoryId": 11,
+        "name": "Rib Eye Steak",
+        "description": "Rib Eye Steak Served over mashed potato, a side of grilled veggies with peppercorn, mushroom, and chimichurri sauce.",
+        "price": 2999,
+        "imageUrl": "https://images.unsplash.com/photo-1600891964092-4316c288032e?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": true,
+        "isNew": false,
+        "allergens": [
+          "Dairy"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Sides",
+    "slug": "sides",
+    "description": "The perfect addition to any meal.",
+    "sortOrder": 12,
+    "image": null,
+    "items": [
+      {
+        "id": 1201,
+        "categoryId": 12,
+        "name": "Side Rice",
+        "description": null,
+        "price": 499,
+        "imageUrl": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": null
+      },
+      {
+        "id": 1202,
+        "categoryId": 12,
+        "name": "Side Fries",
+        "description": null,
+        "price": 349,
+        "imageUrl": "https://images.unsplash.com/photo-1576107232684-1279f390859f?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": null
+      },
+      {
+        "id": 1203,
+        "categoryId": 12,
+        "name": "Pita",
+        "description": null,
+        "price": 349,
+        "imageUrl": "https://images.unsplash.com/photo-1628840042765-356cda07504e?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": [
+          "Gluten"
+        ]
+      },
+      {
+        "id": 1204,
+        "categoryId": 12,
+        "name": "Salad",
+        "description": null,
+        "price": 449,
+        "imageUrl": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": null
+      },
+      {
+        "id": 1205,
+        "categoryId": 12,
+        "name": "Sub Onion Rings",
+        "description": null,
+        "price": 449,
+        "imageUrl": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": [
+          "Onion"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Desserts",
+    "slug": "desserts",
+    "description": "Sweet treats to end your meal.",
+    "sortOrder": 9,
+    "image": null,
+    "items": [
+      {
+        "id": 901,
+        "categoryId": 9,
+        "name": "Nutella Cheese Cake",
+        "description": "Creamy cheese cake with crumbly crust topped with crushed oreo cookies.",
+        "price": 699,
+        "imageUrl": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": true,
+        "isNew": false,
+        "allergens": [
+          "Dairy",
+          "Nuts"
+        ]
+      },
+      {
+        "id": 902,
+        "categoryId": 9,
+        "name": "Cheese Cake",
+        "description": "Rich layered cake.",
+        "price": 699,
+        "imageUrl": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": [
+          "Dairy"
+        ]
+      },
+      {
+        "id": 903,
+        "categoryId": 9,
+        "name": "Carrot Cake",
+        "description": "Moist carrot cake with creamy frosting.",
+        "price": 699,
+        "imageUrl": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=2000&auto=format&fit=crop",
+        "calories": null,
+        "isFeatured": false,
+        "isNew": false,
+        "allergens": [
+          "Dairy",
+          "Nuts"
+        ]
+      }
+    ]
+  }
+]

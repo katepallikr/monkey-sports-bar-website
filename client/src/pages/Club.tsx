@@ -25,7 +25,7 @@ export default function Club() {
 
   return (
     <Layout>
-      <div className="min-h-[80vh] flex items-center relative overflow-hidden bg-neutral-900 py-20">
+      <div className="min-h-[80vh] flex items-center relative overflow-hidden bg-neutral-900 pt-56 md:pt-64 pb-20">
         {/* Background Graphic */}
         <div className="absolute inset-0 z-0 opacity-20">
            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary/40 via-neutral-900 to-neutral-900"></div>
