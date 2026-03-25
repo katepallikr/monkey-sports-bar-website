@@ -54,4 +54,4 @@ If you need to update the menu items, prices, or daily specials, you don't need 
 
 ## 📝 TODO
 
-- [ ] **Food Photography Update**: The current `menu.json` database is utilizing high-resolution Unsplash stock photography placeholders. We need to schedule a professional photo shoot of the actual 5 Monkeys food items and replace the `imageUrl` paths in the database with the real photography when it becomes available.
+- [ ] **Food Photography Update**: The current `menu.json` database is utilizing high-resolution Unsplash stock photography placeholders. We need to update professional photo's to the actual 5 Monkeys food items and replace the `imageUrl` paths in the database with the real photography when it becomes available.
