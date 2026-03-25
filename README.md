@@ -49,3 +49,9 @@ If you want to spin up the site on your own machine to test changes:
 ## 🤝 Maintenance & Data
 
 If you need to update the menu items, prices, or daily specials, you don't need to know React! Simply go into the `client/public/data` folder and update `menu.json` or `specials.json`. The React app dynamically pulls and renders from these files, so your changes will instantly reflect on the site.
+
+---
+
+## 📝 TODO
+
+- [ ] **Food Photography Update**: The current `menu.json` database is utilizing high-resolution Unsplash stock photography placeholders. We need to schedule a professional photo shoot of the actual 5 Monkeys food items and replace the `imageUrl` paths in the database with the real photography when it becomes available.
